@@ -1,0 +1,21 @@
+//
+//  TSPrefixHeader.pch
+//  Time Tracking test
+//
+//  Created by Admin on 02.04.18.
+//  Copyright © 2018 Tsvigun Aleksander. All rights reserved.
+//
+
+#ifndef TSPrefixHeader_pch
+#define TSPrefixHeader_pch
+
+#define kFramePopupView CGRectMake(0, -247, 315, 247)
+
+#define kHeightNavBar 64.0
+#define kDismissPopupView 1000.0
+
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue: b/255.0 alpha:1.0]
+#define YELLOW_COLOR RGB(255, 230, 160)
+#define BLUE_COLOR RGB(103, 126, 224)
+
+#endif /* TSPrefixHeader_pch */

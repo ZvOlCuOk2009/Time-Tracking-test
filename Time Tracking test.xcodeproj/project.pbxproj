@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848627F820736E4900104BEE /* CALayer+IBConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 848627F720736E4900104BEE /* CALayer+IBConfiguration.m */; };
+		84B6A4A12073F0D10011B528 /* NSString+TSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6A4A02073F0D10011B528 /* NSString+TSString.m */; };
 		84DDF88F207268A500349211 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF88E207268A500349211 /* AppDelegate.m */; };
 		84DDF892207268A500349211 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF891207268A500349211 /* ViewController.m */; };
 		84DDF895207268A500349211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DDF893207268A500349211 /* Main.storyboard */; };
 		84DDF897207268A500349211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DDF896207268A500349211 /* Assets.xcassets */; };
 		84DDF89A207268A500349211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DDF898207268A500349211 /* LaunchScreen.storyboard */; };
 		84DDF89D207268A500349211 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF89C207268A500349211 /* main.m */; };
+		84DDF8A520726CDE00349211 /* TSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF8A420726CDE00349211 /* TSTableViewCell.m */; };
+		84DDF8A8207275C500349211 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF8A6207275C500349211 /* Model.xcdatamodeld */; };
+		84DDF8B22072780800349211 /* Task+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF8B02072780800349211 /* Task+CoreDataProperties.m */; };
+		84DDF8B9207283CF00349211 /* TSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF8B8207283CF00349211 /* TSDataManager.m */; };
+		84DDF8BC20729FB900349211 /* TSPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DDF8BB20729FB900349211 /* TSPopupView.xib */; };
+		84DDF8BF2072A17500349211 /* TSPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF8BE2072A17500349211 /* TSPopupView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		848627F620736E4900104BEE /* CALayer+IBConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+IBConfiguration.h"; sourceTree = "<group>"; };
+		848627F720736E4900104BEE /* CALayer+IBConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+IBConfiguration.m"; sourceTree = "<group>"; };
+		84B6A49F2073F0D10011B528 /* NSString+TSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TSString.h"; sourceTree = "<group>"; };
+		84B6A4A02073F0D10011B528 /* NSString+TSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TSString.m"; sourceTree = "<group>"; };
 		84DDF88A207268A500349211 /* Time Tracking test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracking test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DDF88D207268A500349211 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84DDF88E207268A500349211 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +38,19 @@
 		84DDF899207268A500349211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DDF89B207268A500349211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DDF89C207268A500349211 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84DDF8A320726CDE00349211 /* TSTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTableViewCell.h; sourceTree = "<group>"; };
+		84DDF8A420726CDE00349211 /* TSTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTableViewCell.m; sourceTree = "<group>"; };
+		84DDF8A7207275C500349211 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		84DDF8AD2072780800349211 /* Task+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataClass.h"; sourceTree = "<group>"; };
+		84DDF8AE2072780800349211 /* Task+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataClass.m"; sourceTree = "<group>"; };
+		84DDF8AF2072780800349211 /* Task+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataProperties.h"; sourceTree = "<group>"; };
+		84DDF8B02072780800349211 /* Task+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataProperties.m"; sourceTree = "<group>"; };
+		84DDF8B7207283CF00349211 /* TSDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataManager.h; sourceTree = "<group>"; };
+		84DDF8B8207283CF00349211 /* TSDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataManager.m; sourceTree = "<group>"; };
+		84DDF8BB20729FB900349211 /* TSPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSPopupView.xib; sourceTree = "<group>"; };
+		84DDF8BD2072A17500349211 /* TSPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPopupView.h; sourceTree = "<group>"; };
+		84DDF8BE2072A17500349211 /* TSPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPopupView.m; sourceTree = "<group>"; };
+		84DDF8C42072C72800349211 /* TSPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +64,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B6A49D207388FA0011B528 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				848627F620736E4900104BEE /* CALayer+IBConfiguration.h */,
+				848627F720736E4900104BEE /* CALayer+IBConfiguration.m */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		84B6A49E2073F0A10011B528 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				84B6A49F2073F0D10011B528 /* NSString+TSString.h */,
+				84B6A4A02073F0D10011B528 /* NSString+TSString.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		84DDF881207268A500349211 = {
 			isa = PBXGroup;
 			children = (
@@ -58,17 +101,72 @@
 		84DDF88C207268A500349211 /* Time Tracking test */ = {
 			isa = PBXGroup;
 			children = (
-				84DDF88D207268A500349211 /* AppDelegate.h */,
-				84DDF88E207268A500349211 /* AppDelegate.m */,
-				84DDF890207268A500349211 /* ViewController.h */,
-				84DDF891207268A500349211 /* ViewController.m */,
+				84DDF8B4207278B100349211 /* App */,
+				84DDF8B32072780F00349211 /* CoreData */,
+				84B6A49E2073F0A10011B528 /* Category */,
+				84DDF8BA20729F7700349211 /* View */,
+				84B6A49D207388FA0011B528 /* Layer */,
+				84DDF8B6207278CE00349211 /* Cell */,
+				84DDF8B5207278C200349211 /* Controller */,
 				84DDF893207268A500349211 /* Main.storyboard */,
+				84DDF8C42072C72800349211 /* TSPrefixHeader.pch */,
 				84DDF896207268A500349211 /* Assets.xcassets */,
 				84DDF898207268A500349211 /* LaunchScreen.storyboard */,
+				84DDF8A6207275C500349211 /* Model.xcdatamodeld */,
 				84DDF89B207268A500349211 /* Info.plist */,
 				84DDF89C207268A500349211 /* main.m */,
 			);
 			path = "Time Tracking test";
+			sourceTree = "<group>";
+		};
+		84DDF8B32072780F00349211 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				84DDF8AD2072780800349211 /* Task+CoreDataClass.h */,
+				84DDF8AE2072780800349211 /* Task+CoreDataClass.m */,
+				84DDF8AF2072780800349211 /* Task+CoreDataProperties.h */,
+				84DDF8B02072780800349211 /* Task+CoreDataProperties.m */,
+				84DDF8B7207283CF00349211 /* TSDataManager.h */,
+				84DDF8B8207283CF00349211 /* TSDataManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		84DDF8B4207278B100349211 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84DDF88D207268A500349211 /* AppDelegate.h */,
+				84DDF88E207268A500349211 /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		84DDF8B5207278C200349211 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84DDF890207268A500349211 /* ViewController.h */,
+				84DDF891207268A500349211 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84DDF8B6207278CE00349211 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84DDF8A320726CDE00349211 /* TSTableViewCell.h */,
+				84DDF8A420726CDE00349211 /* TSTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		84DDF8BA20729F7700349211 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84DDF8BD2072A17500349211 /* TSPopupView.h */,
+				84DDF8BE2072A17500349211 /* TSPopupView.m */,
+				84DDF8BB20729FB900349211 /* TSPopupView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +200,7 @@
 				TargetAttributes = {
 					84DDF889207268A500349211 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +230,7 @@
 			files = (
 				84DDF89A207268A500349211 /* LaunchScreen.storyboard in Resources */,
 				84DDF897207268A500349211 /* Assets.xcassets in Resources */,
+				84DDF8BC20729FB900349211 /* TSPopupView.xib in Resources */,
 				84DDF895207268A500349211 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +243,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DDF892207268A500349211 /* ViewController.m in Sources */,
+				84DDF8A520726CDE00349211 /* TSTableViewCell.m in Sources */,
+				84DDF8B22072780800349211 /* Task+CoreDataProperties.m in Sources */,
+				84DDF8A8207275C500349211 /* Model.xcdatamodeld in Sources */,
 				84DDF89D207268A500349211 /* main.m in Sources */,
+				84DDF8B9207283CF00349211 /* TSDataManager.m in Sources */,
+				84DDF8BF2072A17500349211 /* TSPopupView.m in Sources */,
+				848627F820736E4900104BEE /* CALayer+IBConfiguration.m in Sources */,
 				84DDF88F207268A500349211 /* AppDelegate.m in Sources */,
+				84B6A4A12073F0D10011B528 /* NSString+TSString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +385,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D7GRV784H;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Time Tracking test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "project.Time-Tracking-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +406,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D7GRV784H;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Time Tracking test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "project.Time-Tracking-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -324,6 +444,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84DDF8A6207275C500349211 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84DDF8A7207275C500349211 /* Model.xcdatamodel */,
+			);
+			currentVersion = 84DDF8A7207275C500349211 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 84DDF882207268A500349211 /* Project object */;
 }
