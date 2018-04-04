@@ -71,19 +71,29 @@
 - (void)startTimer {
     
     if (!self.timer) {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
-        [self.timer isValid];
-    }}
+        [self activateTimer];
+    }
+}
+
+//receive the counter at the moment of an exit from a background mode
 
 - (void)startTimerLeavingBbackground:(NSInteger)time
 {
     self.counter = time;
+    [self activateTimer];
+}
+
+- (void)activateTimer
+{
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+    [self.timer isValid];
 }
 
 - (void)timerAction
 {
     self.timerLabel.text = [self currentTime];
+    
+    //save value counter
     [[NSUserDefaults standardUserDefaults] setInteger:self.counter - 1 forKey:@"counter"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }

@@ -11,6 +11,7 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) NSTimer *timer;
 @property (assign, nonatomic) NSInteger counter;
 
 @end
@@ -36,13 +37,14 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
     self.counter = [[[NSUserDefaults standardUserDefaults] objectForKey:@"counter"] integerValue];
-    [self runBackgroundTask:0];
+    [self runBackgroundCounter:0];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     TSPopupView *popupView = [TSPopupView initViewByRect:CGRectMake(0, 0, 50, 50)];
     [popupView startTimerLeavingBbackground:self.counter];
+    [self.timer invalidate];
 }
 
 
@@ -83,21 +85,20 @@
 
 
 //run background task
-- (void)runBackgroundTask:(NSInteger)counter {
+- (void)runBackgroundCounter:(NSInteger)counter {
     //check if application is in background mode
     if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
         
         UIApplication *app = [UIApplication sharedApplication];
         
-        //create UIBackgroundTaskIdentifier and create tackground task, which starts after time
         __block UIBackgroundTaskIdentifier bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
             [app endBackgroundTask:bgTask];
             bgTask = UIBackgroundTaskInvalid;
         }];
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-            NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:counter target:self selector:@selector(startTrackingBackground) userInfo:nil repeats:NO];
-            [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+            self.timer = [NSTimer scheduledTimerWithTimeInterval:counter target:self selector:@selector(startTrackingBackground) userInfo:nil repeats:NO];
+            [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
             [[NSRunLoop currentRunLoop] run];
         });
     }
@@ -107,7 +108,7 @@
 - (void)startTrackingBackground {
     ++self.counter;
     NSLog(@"counter %ld", self.counter);
-    [self runBackgroundTask:1];
+    [self runBackgroundCounter:1];
 }
 
 @end
